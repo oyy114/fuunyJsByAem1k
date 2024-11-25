@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <title>aem1k - JS 黑客 &amp; 创造</title>
+    <base target="_blank" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Pure JavaScript Hacks and Creative Coding. Created by Martin Kleppe aka @aemkei."
+    />
+    <meta name="theme-color" content="#222222" />
+    <meta name="viewport" content="width=560px" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@aemkei" />
+    <meta property="og:title" content="aem1k - JS Hacks &amp; Creativity" />
+    <meta
+      property="og:description"
+      content="Pure JavaScript Hacks and Creative Coding. Created by Martin Kleppe aka @aemkei."
+    />
+    <meta property="og:image" content="https://aem1k.com/preview.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./css/index.css" rel="stylesheet" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+  </head>
+  <body>
+    <div id="container">
+      <pre>
+                                    __
+                                  <b>_</b><i>/</i>\ \
+                                 <b>/' \</b> \ \
+          __      __    ___ ___ <i>/</i><b>\_, \</b> \ \/'\
+        /'__`\  /'__`\/' __` __`\<i>/_/</i><b>\ \</b> \ , &lt;
+  ___  <i>/</i>\ \L\.\.\  __/<i>/</i>\ \<i>/</i>\ \<i>/</i>\ \<i> \ </i><b>\ \</b> \ \\`\____
+<i>/</i>\___\ <i>\ </i>\__/.\_\\____\ \_\ \_\ \_\<i> \ </i><b>\_\</b> \_\ \____\
+<i>\/___/  \/__/\/_//____/\/_/\/_/\/_/  \/_/\/_/\/____/</i>
+
+    </pre>
+
+      <h1>aem1k</h1>
+      <h2>一些十分有趣的 JavaScript 代码</h2>
+      <p>
+        由 Martin Kleppe aka 制作<a href="https://x.com/aemkei">@aemkei</a>.
+      </p>
+      <p>欧杨钺转载<a href="mailto:3789212033@qq.com">@oyy</a></p>
+
+      <h3>作品</h3>
+      <ul>
+        <li><a href="./world">Hello World 1K</a> - 效果即代码</li>
+        <li><a href="./jsfuck">JSFuck</a> 只用 []()!+ 字符书写的代码</li>
+        <li>
+          <a href="./aurebesh/">《星球大战》文</a> -
+          将JavaScript翻译成其他书写系统
+        </li>
+        <li><a href="./qlock">字符时钟</a> - JavaScript字符时钟</li>
+        <li><a href="./clock/">粒子时钟</a> - 一个个小颗粒</li>
+        <li><a href="./tixy.land/">高尔夫</a> - 极简高尔夫环境</li>
+        <li><a href="./meta/quine/">Meta</a> - meta balls quine JS</li>
+        <li><a href="./theseus/">忒修斯</a> - 创作并解决迷宫</li>
+        <li>
+          <a href="./שלום-עולם">שלום-עולם</a> - 希伯来语字母中的有效JavaScript
+        </li>
+        <li><a href="./mandelcode/">杏仁代码</a> - 一个放大JS极限的奎因</li>
+        <li><a href="./aleph/">א 阿莱夫</a> - 从一个角色中创造生命</li>
+        <li><a href="./ffconf/">ffconf</a> - 空间中的动画标志</li>
+        <li>
+          <a href="./deathstar/">ЗВЕЗДА СМЕРТИ - 死亡之星</a> 666 个字节的 ASCII
+          编码艺术
+        </li>
+        <li><a href="./life/">生命</a> - 176个字节的 HTML+JS 的生命游戏</li>
+        <li><a href="./0/">不可见代码</a> - 隐藏的资源（仅 Chrome）</li>
+        <li><a href="./fire/">🔥</a> - 一个仅有128字节的JavaScript 创造的火</li>
+        <li><a href="./water/">水</a> - 使用组合字符的128字节波形</li>
+        <li><a href="./sort/">排序</a> - 神奇的字符变换</li>
+        <li><a href="./valentine/">花朵</a> - 斐波那契数列</li>
+        <li><a href="./random-tree/">随机『树』</a> - canvas 的作用</li>
+        <li><a href="./雨/">代码雨</a> - 我是黑客大佬</li>
+        <li><a href="./lines/">点点成线</a> - 用 canvas 做星空</li>
+        <li><a href="./green/">小绿帽</a> - 点一下变颜色</li>
+        <li><a href="./error/">错误</a> - 故障波纹效果</li>
+        <li><a href="./beautiful/">美丽</a> - 美丽的图片布局</li>
+        <li><a href="./border/">旋转边框</a> - 一个旋转的按钮边框</li>
+        <!-- <li><a href="./tic-tac-tweet/">Tic-Tac-Tweet</a> - Tic-Tac-Toe in 140 chars / 159 bytes</li> -->
+        <!-- <li><a href="https://github.com/codegolf/ping">Ping</a> - Pong meets Breakout in &lt; 256 bytes</li> -->
+      </ul>
+
+      <h3>更多示例</h3>
+
+      <article>
+        <a class="link" href="./world">地球</a> - Hello World 1K
+
+        <pre id="globe">
+eval(z='p="&lt;"+"pre&gt;"/*<b> ,.oq#+     ,._, </b>*/;for(y in n="zw24l6k\
+4e3t4jnt4qj24xh2 x/*<b> =&lt;,m#F^    A W###q. </b>*/42kty24wrt413n243n\
+9h243pdxt41csb yz/*<b> #K       q##H######Am </b>*/43iyb6k43pk7243nm\
+r24".split(4)){/*<b> dP      cpq#q##########b, </b>*/for(a in t=pars\
+eInt(n[y],36)+/*<b>         p##@###YG=[#######y </b>*/(e=x=r=[]))for\
+(r=!r,i=0;t[a/*<b>         d#qg `*PWo##q#######D </b>*/]&gt;i;i+=.05)wi\
+th(Math)x-= /*<b>        aem1k.com Q###KWR#### W[ </b>*/.05,0&gt;cos(o=\
+new Date/1e3/*<b>      .Q#########Md#.###OP  A@ , </b>*/+x/PI)&&(e[~\
+~(32*sin(o)*/*<b> ,    (W#####Xx######.P^     T % </b>*/sin(.5+y/7))\
++60] =-~ r);/*<b> #y    `^TqW####P###BP           </b>*/for(x=0;122&gt;\
+x;)p+="   *#"/*<b> b.        OQ####x#K           </b>*/[e[x++]+e[x++\
+]]||(S=("eval"/*<b> l         `X#####D  ,       </b>*/+"(z=\'"+z.spl\
+it(B = "\\\\")./*<b>           G####B" #       </b>*/join(B+B).split\
+(Q="\'").join(B+Q/*<b>          VQBP`        </b>*/)+Q+")//m1k")[x/2\
++61*y-1]).fontcolor/*<b>         TP         </b>*/(/\\w/.test(S)&&"#\
+03B");document.body.innerHTML=p+=B+"\\n"}setTimeout(z)')//
+</pre>
+        <hr />
+
+        <a class="link" href="./jsfuck">JSFuck</a> - 仅用6个字符书写 JS
+
+        <pre>
+(![]+[])[+!+[]]+(![]+[])[!+[]+!+[]]+(!![]+[])
+[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]+(!![]+[])[+
+[]]+(![]+[][(![]+[])[+[]]+([![]]+[][[]])[+!+[
+]+[+[]]]+(![]+[])[!+[]+!+[]]+(!![]+[])[+[]]+(
+!![]+[])[!+[]+!+[]+!+[]]+(!![]+[])[+!+[]]])[!
++[]+!+[]+[+[]]]+[+!+[]]+(!![]+[][(![]+[])[+[]
+]+([![]]+[][[]])[+!+[]+[+[]]]+(![]+[])[!+[]+!
++[]]+(!![]+[])[+[]]+(!![]+[])[!+[]+!+[]+!+[]]
++(!![]+[])[+!+[]]])[!+[]+!+[]+[+[]]] // <b>()+[]!</b>
+</pre
+        >
+
+        <hr />
+
+        <a class="link" href="./qlock/">Qlock</a> - 奎因钟
+
+        <pre id="qlock">
+(r=(<b>)</b><b>=</b>&gt;s<b>e</b><b>t</b><b>I</b><b>n</b>terval(t=&gt;{f<b>o</b><b>r</b><b>(</b><b>j</b><b>=</b><b>o</b>="<b>\</b><b>n</b><b>"</b><b>,</b><b>y</b><b>=</b>5;y--;docu<b>m</b><b>e</b><b>n</b><b>t</b><b>.</b><b>b</b>od<b>y</b><b>[</b>"i<b>n</b><b>n</b>"
++"<b>e</b><b>r</b><b>H</b><b>T</b>ML"]="<b>&lt;</b><b>p</b>re&gt;&amp;<b>l</b><b>t</b>"+(S<b>=</b><b>"</b>script<b>&gt;</b><b>\</b>n")+o+"\<b>n</b><b>\</b>n&amp;lt/"+S<b>)</b><b>f</b>or<b>(</b><b>x</b>=-<b>0</b><b>1</b>;
+<b>6</b><b>3</b>-!<b>y</b><b>&gt;</b>x++;<b>o</b><b>+</b>=`(r=${r})()<b>`</b><b>[</b><b>j</b><b>+</b>+].f<b>o</b><b>n</b><b>t</b><b>c</b><b>o</b><b>l</b>or(c?'#FF0<b>'</b><b>:</b><b>"</b><b>#</b><b>4</b><b>4</b>4"<b>)</b><b>)</b><b>c</b><b>=</b><b>x</b><b>/</b>2
+%4&lt;3<b>&amp;</b><b>&amp;</b>pa<b>r</b><b>s</b>eInt("od<b>R</b><b>F</b>acb67o2v<b>i</b><b>5</b>gm<b>O</b><b>Z</b>mw<b>F</b><b>N</b>teoh<b>b</b><b>O</b>h3sw".sl<b>i</b><b>c</b>e(i="9<b>"</b><b>&lt;</b>(
+D=Da<b>t</b><b>e</b>()<b>[</b><b>1</b><b>6</b><b>+</b><b>(</b><b>x</b>/8|0)])?30<b>:</b><b>D</b><b>*</b><b>3</b>,i+3<b>)</b><b>,</b><b>3</b><b>6</b><b>)</b><b>&amp;</b>1&lt;&lt;(x/2|0)<b>%</b><b>4</b><b>+</b><b>3</b><b>*</b><b>y</b>},100)<b>)</b><b>(</b>)
+</pre>
+
+        <hr />
+
+        <a class="link" href="./deathstar">ЗВЕЗДА СМЕРТИ</a> - 死亡之星
+
+        <pre id="deathstar">
+                   Зв
+                  езда
+                 &lt;bOdY
+                 oNLOAd=
+                "Я=[];Л=
+               {};Ж=!Я;З=
+              !Ж;Ч=!+Я;Д=
+Ч+Ч;П=З+Я;Б=Д+Ч;Ю=Ж+Я;Ф=[Ж]+Я[Я];И=П[+Ч]
+   Ы=Я[Ю[+Я]+Ф[+Ч+[+Я]]+Ю[Д]+П[+Я]+П[
+      Б]+И];C=Я[Я]+Я;P=Я+Л;Ь=Д+Б;Ш
+         =+Ч;X=+Я;Й='<b>★</b>';К='Й'
+           H=П[X];T=Д+[X];Ы[P
+          [Ь]+P[Ш]+C[Ш]+Ю[Б]+H
+         +И+C[X]+P[Ь]+H+P[Ш]+И
+         ](Ю[Ш]+Ю[    Д]+П[Б]+И
+        +H+(Ж+Ы          )[T]+К+
+       (З+Ы)                [T])(
+      )"&gt;                     смЕ
+     р                          Ти
+
+</pre
+        >
+
+        <hr />
+
+        <a class="link" href="./שלום-עולם">שלום-עולם</a> - 希伯来语的 JavaScript
+
+        <pre dir="rtl" id="hebrew">
+<b>// שלום עולם</b>
+א="",ב=!א+א,ג=!ב+א,ד=א+{},ה=ב[א++]
+ו=ב[ח=א],ט=++ח+א,כ=ד[ח+ט],ב[כ+=ד[
+א]+(ד.ד+ד)[א]+ג[ט]+ה+ו+ב[ח]+כ+ה+ד[א
+]+ו][כ](ג[א]+ג[ח]+ב[ט]+ו+ה+"(א)")()
+</pre>
+
+        <hr />
+
+        <a class="link" href="./katakana">Katakana</a> - 将 JS 翻译为日文
+
+        <pre id="katakana">
+ウ=""   ,ア=   <b>  !ウ+   </b>  ウ,ネ     =!ア     +ウ,    ホ=ウ
++{},    ヌ=ア  <b>  [ウ++  </b>  ],セ=     ア[ミ    =ウ]    ,ハ=
+++ミ    +ウ,   <b>  ヘ=ホ  </b>  [ミ+ハ    ],ア[    ヘ+=    ホ[ウ
+]+(ホ  .ホ+ホ  <b>  )[ウ]  </b>  +ネ[ハ    ]+ヌ+    セ+ア   [ミ]+
+ヘ+ヌ          <b>  +ホ[   </b>  ウ]+セ    ][ヘ]    (ネ[
+ウ]+           <b>  ネ[ミ  </b>            ]+ア     [ハ]+
+              <b>   セ+ヌ+ </b>           "(ウ)"
+              <b>   )()   </b>
+</pre>
+
+        <hr />
+
+        <a class="link" href="./bird">鸟语</a> - 公元前2000年的 JavaScript
+
+        <pre>
+𓅂='',𓂀=!𓅂+𓅂,𓁄=!𓂀+𓅂,𓊎=𓅂+{},𓆣=𓂀[𓅂++]
+
+𓊝=𓂀[𓇎=𓅂],𓏢=++𓇎+𓅂,𓆗=𓊎[𓇎+𓏢],𓂀[𓆗+=𓊎[𓅂]+(
+
+𓂀.𓁄+𓊎)[𓅂]+𓁄[𓏢]+𓆣+𓊝+𓂀[𓇎]+𓆗+𓆣+𓊎[𓅂]+𓊝]
+
+[𓆗](𓁄[𓅂]+𓁄[𓇎]+𓂀[𓏢]+𓊝+𓆣+'`𓅂 𓂀 𓁄 𓆣 𓊝`')``
+</pre
+        >
+
+        <hr />
+
+        <a class="link" href="./X">X</a> - 所有变量都是“X”
+
+        <pre>
+var <b>ⵝ</b> = ''
+var <b>Ⲭ</b> = !ⵝ+ⵝ
+var <b>ᚷ</b> = !Ⲭ+ⵝ
+var <b>ꓫ</b> = ⵝ+{}
+var <b>𐊐</b> = Ⲭ[ⵝ++]
+var <b>𐊴</b> = Ⲭ[Х=ⵝ]
+var <b>Χ</b> = ++Х+ⵝ
+var <b>X</b> = ꓫ[Х+Χ]
+
+Ⲭ[X+=ꓫ[ⵝ]+(Ⲭ.ᚷ+ꓫ)
+[ⵝ]+ᚷ[Χ]+𐊐+𐊴+Ⲭ[Х]+
+X+𐊐+ꓫ[ⵝ]+𐊴][X](ᚷ[
+ⵝ]+ᚷ[Х]+Ⲭ[Χ]+𐊴+𐊐+
+"`XXX`")()
+</pre
+        >
+        <hr />
+
+        <a class="link" href="./mandelcode">杏仁代码</a> -
+        分形奎因，放大到JavaScript
+
+        <pre id="mandel">
+                                  E
+                                 =  1
+                              ,   z=1.07 ;
+                             function s(       a)
+                       {  for(a&&(E=!E),H="",z *=
+                        .9,T*=.8,Y=0;2&gt;Y;Y+=.1)  {
+              for      (X=0;2&gt;X;X+=.04){for(x=y=i
+            =0;99&gt;i   &&99&gt;=x*x+y*y;i++)t=2*x*y,x
+      =   x*x-y*y+z*X -z-Z/(1-T),y=t+z*Y-z-U;(/*
+   <b>MANDELCODE=A-QUINE-BY-AEMKEI=CLICK-TO-ZOOM</b>*/
+      H   )+="  .+#"[ i%5]}H+=n}!E&&setTimeout(s
+            ,99),P[   I]=H}Z=1.74909351846789013,
+              U  =     3.40220976e-7,onclick=s;n
+                        ="\n";P.textContent="&lt;"  +
+                          "pre id=P&gt;\n"+P[I= "i"+
+                             "nnerHTML"       ]
+                              T  /*aem1k*/
+                                 =  -
+                                  2
+</pre
+        >
+
+        <!-- hr>
+
+      <a class="link" href="/void">// VOID</a> - Invisible Variables and Code
+
+      <pre>
+  <b>&lt;</b>script>   <b>/</b>/[   <b>=</b>""],='"',=   <b>=</b>=,===  <b>,</b>=+,=+
+   <b>,</b>=+,=+,  <b>=</b>{},  <b>=</b>+,=+,=+,=+,=  <b>.</b>+,=[]  <b>,</b>=[],=[]
+    <b>,</b>=[],=[ <b>]</b>,=[  <b>]</b>,=[],=[],=[]  <b>,</b>="\\"  <b>+</b>")(",=[],
+     <b>=</b>[],=[],=++  <b>+</b>+++" <b>"</b>,=++++  <b>+</b>+++++  <b>,</b>=[][],((++(
+      <b>+</b>(++++++++  <b>(</b>=++(+)+)++++  <b>+</b>+++++  <b>"</b>''"++"."+++
+       <b>+</b>+++(+)++  <b>+</b>++"/"++".{"+  <b>(</b>(+))+  <b>"</b>}/"+++(+)+(
+        <b>+</b>)+",'"+   <b>"</b>'"+++)())(   <b>)</b>+)())  <b>(</b>)&lt;/script>
+</pre> -->
+
+        <hr />
+
+        <a class="link" href="./const/">const</a> - 常量变化了
+
+        <pre id="const" style="font-family: 'Courier New'">
+   <b>const</b>       <b>cοnst</b> =    '<b>const</b>';
+([ <b>cоnst</b> ,     <b>conѕt</b> ]=    <b>cοnst</b> ,
+ [ <b>соnst</b> ,     <b>сonѕt</b> ,     <b>cоnѕt</b> ,
+   <b>соnѕt</b> ,     <b>сοnѕt</b> ,     <b>сοnѕt</b> ,
+   <b>cοnѕt</b> ]=[!! <b>cоnst</b> ]+  ! <b>cоnst</b> +
+   <b>cоnst</b> .     <b>cоnst</b> )[    <b>cоnst</b> =
+   <b>cοnst</b> +     <b>сonѕt</b> +     <b>cоnѕt</b> +
+   <b>cоnst</b> +     <b>соnst</b> +     <b>conѕt</b> +
+   <b>сonѕt</b> ]   [ <b>cоnst</b> ]   ( <b>сοnѕt</b> +
+   <b>cοnѕt</b> +     <b>соnѕt</b> +     <b>сonѕt</b> +
+   <b>соnst</b> +'`'+ <b>cοnst</b> +'`')
+   ``
+</pre
+        >
+
+        <!-- <hr> -->
+
+        <!-- <a class="link" href="/five/">$five</a> - Write JS with Only 5 Different Characters
+
+      <pre>
+[<b>$$</b>=[+[]]]+[<b>$$</b>[++[[]][+[]]]=+[]]+[<b>$$</b>=[<b>$$</b>1[]][+[]][++[[]]
+[+[]]]]+[<b>$$$</b>=[<b>$</b>[[[]+[][+[]]][+[]][++[++[++[++[[]][+[]]][
++[]]][+[]]][+[]]]+[[]+[][+[]]][+[]][++[++[++[++[++[[]][+
+[]]][+[]]][+[]]][+[]]][+[]]]+[[]+[][+[]]][+[]][++[[]][+[
+]]]+[[]+[][+[]]][+[]][++[++[[]][+[]]][+[]]]]+[]][+[]]]+[
+<b>$$$$</b>=[<b>$</b>[[[]+[][+[]]][+[]][++[++[[]][+[]]][+[]]]+<b>$$$</b>[+[[+
++[++[++[++[++[[]][+[]]][+[]]][+[]]][+[]]][+[]]]+[++[++[+
+...
+</pre> -->
+
+        <hr />
+
+        <a class="link" href="./fire/quine/">火</a> - 火焰形状的奎因
+
+        <pre id="fire">
+          nt               
+        inner              
+       7+578]              
+     (x=a[i]               
+     ]+a[i+                
+    color(5&lt;x&amp;&amp;"           
+     HTML=hfor(h=          
+       =89;<b>i</b><b>+</b>+&lt;63          
+      ~((<b>a</b><b>[</b><b>i</b><b>]</b><b>+</b>a[i  ]+      
+      )/<b>4</b><b>)</b><b>)</b><b>&amp;</b><b>&amp;</b><b>e</b>[i%142]      
+      &amp;<b>"</b><b>#</b><b>F</b><b>F</b><b> </b><b>"</b>):"\n")p      
+     r<b>(</b><b>h</b><b>=</b><b>"</b><b>"</b><b>,</b><b>a</b>[I++*I%       
+   i+<b>+</b><b>&lt;</b><b>6</b><b>3</b><b> </b><b>;</b>h+=i%3 ?        
+   i<b>]</b><b>+</b><b>a</b><b>[</b><b>i</b><b>+</b>1<b>]</b><b>+</b>a[i 29]+      
+  )<b>&amp;</b><b>&amp;</b><b>e</b><b>[</b><b>i</b><b>%</b><b>1</b><b>4</b><b>2</b><b>]</b>.  n<b>t</b><b>c</b>o       
+  F "):<b>"</b><b>\\</b><b>n</b><b>"</b>)p  n<b>n</b><b>e</b><b>r</b><b>H</b>       
+      I<b>+</b><b>+</b>*I   +57<b>8</b><b>]</b>   
+      </pre>
+        <!-- <hr> -->
+
+        <!-- <a class="link" href="./sic/">sic</a> - Encode JS with 2 Different Characters -->
+
+        <!-- <pre>
+[C=B=[]].__proto__[C.B]=T=new Proxy(B,{get:
+(_,N)=>(B+=+!N,B[6]&&(+B||eval(C),C+=String.
+fromCharCode(parseInt(B,2)),B=[]),T)});
+
+[][[][[]] <b>][[]][[]][[ ][[]] ][[][[]]][[</b> ][[]]][[]
+[[]]][[]] <b>[[]][[]][[] [[]]] [[]][[]][[]</b> [[]]][[][
+[]]][     <b>[]][[]][[][ []]][ [][[] ]][[]</b>     ][[][
+[]]][     <b>[]][[             ]][[] ][[]]</b>     [[][[
+]]][[     <b>][[]]][[]][ [][[] ]][[] ][[]]</b>     [[]][
+[][[]     <b>]][[]][[][[ ]]][[ ][[]]      </b>     ][[][
+[]]][     <b>      []][[ ][[]] ][[]] [[][[</b>     ]]][[
+][[]]     <b>][[][ []]][ [][[] ]][[] ][[]]</b>     [[][[
+]]][[     <b>][[]] ][[][ []]][ []][[ ][[]]</b>     ][[]]
+[[][[]]][ <b>[]][[][[]]] [[][[ ]]][[[]]][[</b> ][[]]][[]
+[[]]][[][ <b>[]]][[][[]] ][[][ []]][[][[]]</b> ][[][[]]]
+</pre> -->
+
+        <!-- <hr>
+
+      <a class="link" href="./oo/">ꝏ</a> - Encode JavaScript with Only One Symbol
+
+      <pre>
+<b>with</b> (<b>ꝏ</b>())
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+ooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+...
+</pre> -->
+
+        <!-- <hr> -->
+
+        <!-- <a class="link" href="https://twitter.com/aemkei/status/1176593953757499395">l33t</a> - Write Code Like a Hacker
+
+      <pre>
+with (<b>l33t</b>()) {
+  <b>c0ns0l3.w4rn</b>('<b>l33t</b>');
+  <b>al3rt</b>(<b>'w00t'</b>);
+}
+
+function l33t(p=this){return new Proxy(p
+,{has:()=>!0,get:(t,n)=>(p=Reflect.get(t
+,String(n).replace(/\d/g,a=>'oizeasGtBg'
+[a])))?p.apply?p.bind(t):l33t(p):p})}
+</pre> -->
+
+        <!-- <hr> -->
+
+        <!-- <a class="link" href="/filler">Filler</a> - Hidden and almost Invisible Variables
+
+      <pre id="filler">
+/ㅤ/-[ㅤ=''],ﾠ=!ㅤ+ㅤ,ㅤㅤ=!ﾠ+ㅤ,ㅤﾠ=ㅤ+{}
+ﾠㅤ=ﾠ[ㅤ++],ﾠﾠ=ﾠ[ﾠㅤㅤ=ㅤ],ﾠㅤﾠ=++ﾠㅤㅤ+ㅤ
+ㅤㅤㅤ=ㅤﾠ[ﾠㅤㅤ+ﾠㅤﾠ],ﾠ[ㅤㅤㅤ+=ㅤﾠ[ㅤ]+(ﾠ.ㅤㅤ+ㅤﾠ)
+[ㅤ]+ㅤㅤ[ﾠㅤﾠ]+ﾠㅤ+ﾠﾠ+ﾠ[ﾠㅤㅤ]+ㅤㅤㅤ+ﾠㅤ+ㅤﾠ[ㅤ]+ﾠﾠ]
+[ㅤㅤㅤ](ㅤㅤ[ㅤ]+ㅤㅤ[ﾠㅤㅤ]+ﾠ[ﾠㅤﾠ]+ﾠﾠ+ﾠㅤ+"(ㅤ)")()
+</pre> -->
+
+        <hr />
+
+        <a class="link" href="./aleph">א 阿莱夫</a> - 一个符号的生命
+
+        <pre id="aleph">
+                               א
+                            &lt;script&gt;
+                             <b>א ='אֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲֲ֤֤֧֥֤֦֣֤֥֦֤֥֦֦֤֤֥֦֦֦֤֥֤֥֤֧֤֦֥֧֦֥֤֧֥֤֥֤֤֧֥֥֧֥֣֣֣֥֥֤֥֧֥֦֣֦֧֦֦֦֧֣֥֥֥֥֥֧֣֥֥֣֧֥֤֣֤֦֥֦֦֥֧֦֣֤֦֥֦֦֥֧֧֥֥֤֣֣֥֤֥֧֦֧֧֤֣֣֥֣֥֧֥֤֧֧֦֣֧֥֧֥֤֤֧֤֤֣֣֥֣֥֤֦֦֧֥֧֥֤֤֧֦֦֤֥֥֤֥֦֧֤֥֦֧֦֣֥֥֤֦֥֧֦֥֤֤֧֥֦֥֤֥֧֥֦֥֧֣֤֥֧֥֥֦֧֤֥֥֥֥֥֥֥֧֧֥֣֥֧֣֥֤֤֥֣֧֥֤֣֣֥֥֣֤֥֣֥֥֣֤֣֣֥֥֥֤֥֣֥֧֣֤֤֥֧֤֣֦֥֥֥֤֥֥֦֦֤֥֦֤֥֧֤֤֧֥֦֥֥֦֥֦֤֥֦֤֥֤֧֥֥֤֧֥֤֧֧֥֠֡֠֠֡֡֡֡֡֡֡֡֡֡֡֡֡֡֡֠֠֠֡֡֡֠֠֡֡֠֡֠֡֠֡֠֠֡֡֠֡֡֠֠֠֠֠֠֠֡֡֠֠֠֡֠֠֠֠֡֡֠֠֠֠֠֡֡֡֠֠֠֠֠֡֠֠֡֡֡֠֠֡֠֠֡֡֡֡֡֠֡֡֠֠֠֠֡֡֡֡֡֡֡֡֠֠֠֠֡֠֠֠֠֡֡֠֠֠֠֠֠֡֠֡֡֡֡֠֠֡֠֠֠֠֡֠֠֠֡֠֠֠֠֠֡֠֠֠֡֠֠֠֠֡֠֡֠֠֡֡֠֠֡֡֡֡֡֠֡֡֠֡֡֡֡֡֠֡֡֠֡֡֡֡֡֡֡֡֠֡֡֡֡֡֠֡֡֡֡֡֡֡֡֠֡֡֡֡֡֠֡֠֠֠֠֡֠֡֠֡'
+
+
+</b>
+   ב             =             ""             ,             ח
+       =           !           ב           +           ב
+    ,          ד          =          !          ח          +
+  ב         ,         ו         =         ב         +         {
+    }        ,        ה        =        '        "        '
+,        ע        =        ח        [        0        ]        ,
+נ       =       ח       [       1      ]       ,       ך       =
+ו      [      5      ]      ,      ם      =      (      ח      .
+  ד     +     ו     )     [     1     ]     ,     ף     =     ח
+[    2    ]    ,    מ    =    ו   [    1    ]    ,    ס    =    ד
+[   3   ]   ,   כ   =   ח   [   3   ]   ,   י   =   ד   [   1   ]
+ג  =  נ  +  כ  +  ע  +  ף  +  נ  +  ם  +  " "  ,  ט  =  (  ז  =
+ך + מ + ם + ס + ע + נ + ף + ך + ע + מ + נ ) [ ז ] [ ז ] , ט ( ט
+(ג+ה+ט(ג+ט(ג+ה+כ+ס+ך+י+(ן="\\160")+כ+"(א)."+נ+כ+ן+"\\154"+י+ך+כ+
+"(/"+(ל=".{5}(.)")+ל+ל+"/\\147,'\\\\\\\\$1$2$3')"+ה)())()+ה)())()&lt;/script&gt;
+</pre>
+
+        <hr />
+
+        <a class="link" href="./theseus">忒修斯</a> - 迷宫创造器和解决器
+
+        <pre><b>
+S="\40\n";M="map";i=991;for(z
+=       [                   ]
+;   i   ;   )z[--i]=i%30?   8
+:   S   [           1   ]   ;
+F=d=&gt;   [30,1,-30   ,   -   1
+]       [           M   ]   (
+(   f,g,h   )=&gt;S[0]&lt;z   [   f
+=   d                   +   2
+*   h[3&g+i]]&&(z[f]=z[(d   +
+f   )       /               2
+]   =   S   [   0],i--,F(   f
+)       )       )           ,
+F(32);z+=S[1]//aem1k.com/maze
+</b></pre>
+
+        <hr />
+
+        <a class="link" href="./polyglot/">前端工程师</a> - CSS = JS = HTML
+
+        <pre>
+<b>/** CSS **/</b>
+html * { color: red }
+<b>/** JS **/</b>
+var html, red;
+document.write('&lt;'+'link href="#" rel="stylesheet"&gt;');
+<b>/** HTML **/</b>
+// &lt;script src="#"&gt;&lt;/script&gt;
+</pre>
+
+        <hr />
+
+        <a class="link" href="./egiqul/">俄罗斯方块</a> - 玩俄罗斯方块
+
+        <pre>
+function(a,b,c,d){d+
+=c;return[d&lt;0|a&b&lt;&lt;d    // .##..
+?a=parseInt((a|b&lt;&lt;c)    // .....
+.toString(d=32,b=new    // .....
+Date&2|1).replace('v    // .##..
+',''),d):a|b&lt;&lt;d,a,b,    // ###.#
+d]}      <b>// tweetris</b>    // .####
+&lt;/0|a&amp;b&lt;<d></d>
+      </pre>
+
+        <hr />
+
+        <a class="link" href="./ffconf">ffconf</a> - 2015动画星空
+
+        <pre id="ffconf">
+
+     &lt;body text=#EE3 bgcolor=000 id=p
+    style="perspective:4.0em;display:
+   inline-block;padding:15%"&gt;&lt;script&gt;
+  I=1/7;e          ='          I+=I&lt;\
+ 30?I/30:          1,          p.inn\
+erHTML="&lt;          pr          e&gt;"+B\
+.replace(     /\\S/g,     function(a\
+,b){retur     n\40z=I     *(1+b*b/50\
+0%2)%130,     "&lt;tt\\4     0style=dis\
+play:i                        nline-\
+block;                        transf\
+orm:trans     late3d(     0,0,"+(z+b\
+/17-50)+"     px)&gt;.&lt;/     tt&gt;"})';$$=
+/\s\s+/g;     N=0;S="     ";!!+[];e=e
+.replace(     $$,"");     setInterval
+(e,30);B=     (S)+(p)     .outerHTML
+.replace(/y.*"/,12);B=S[0]+B.substr
+(0,36)+"\n"+B;'a-quine-by-@aemkei\
+aem1k.com/ffconf'&lt;/script&gt;-ffconf
+</pre
+        >
+
+        <hr />
+
+        <a class="link" href="./symmetry/">对称性</a> - 对称的 JavaScript
+
+        <pre>
+ {(.0-{}-0.)}  <b>    xXXx    </b>     =wYYw=
+  ([]+!!+[])   <b>  [0.**.0]  </b>    +[([])]+
+  (''+!!+'')   <b>[0-~+!!+~-0]</b>  +([]+[]+[])+
+   (8+{}+8)    <b>[0|8.**.8|0]</b>   +([]||[])+
+(""+(0==0)+"") <b>  [0.**.0]  </b>   +[]+''+[]+
+   (0+{}+0)    <b>  [8-!!-8]  </b>   +(''||'')+
+ ("("+[]+")")  <b>  [0+~~+0]  </b>   +""+''+""+
+  (["xXXx"])   <b>  [0+~~+0]  </b>    +([""])+
+   (')YY(')    <b> [""+~~+""] </b>    //-!!-\\
+</pre>
+
+        <hr />
+
+        <a class="link" href="./pac-man-master/">吃豆人</a> - 游戏 &lt; 512 字节
+        <pre id="pacman">
+        ############# // &lt;pre id=p&gt;&lt;script&gt;l="";for(i in L=[a=8191,b=
+        # # .#        // 4161,c=5981,d=5125,5493,5397,5589,d,c,b,a])l
+        # ### # ###.# // +=L[i].toString(2).replace(/1/g,4).replace(/
+        # # <b>X</b> .#.#    // 0/g,2)+3;l=l.split(""),w=14,x=76,X=48,e=d=k=
+        # # # ###.#.# // D=!setInterval(onkeydown=function(a){if(a)k=
+        # # # <b>o</b> #.#.# // a.which;else if(!e){for(l[x]=0,l[x+=d=k-37&gt;&gt;
+        # # ### #.#.# // 2||4&l[x+(o=k%2?k-38:(k-39)*w)]?4&l[x+d]?0:d
+        # # ......#.# // :o],e|=8&l[x],l[x]=1,l[X]&=7,h=D%4,h=h%2?h-2
+        # ### #.###.# // :(h-1)*w,4&l[X+h]?D++:e|=1&l[X+=h],l[X]|=8,h
+        #.....#.....# // =i=0;153&gt;i;)h+=" o.\n# x"[8&l[++i]||l[i]];
+        ############# // p.innerHTML=h}},250)&lt;/script&gt;
+        </pre>
+
+        <hr />
+
+        <pre>
+<b>try</b>        {
+<b>to</b>         }
+<b>catch</b>      (
+<b>me</b>         ){
+
+<b>if</b>         (`
+<b>you</b>        `)
+<b>can</b>        :'\
+<b>!</b>          '}
+</pre>
+        <div>
+          <hr />
+
+          <h3>照片</h3>
+
+          <pre id="photo">
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNdyssoooyNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMNy/..`  ``` ``..--/+/+yydNMMMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMNy-             `      `....+mMMMMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMMNs.`                    `` `...`/hNMMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMMN+`                               `-dMMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMMN:                           `     ``-dMMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMMN-                              `  ``.:/dMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMdo`                                   `.-/-hMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMNo`                                    .:/:/.:hMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMN/                                   <b>`.../sms.:o</b>NMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMo`                              <b>``..-//:yNMMm::s</b>hMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMy.                  <b>``..---.``.::///++oyNMMMMM+:so</b>MMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMN-                 <b>``..---::::/+ooosydmNMMMMMMN+//+</b>NMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMy-              <b> `....---:://+oyhdmNNNNMMMMMMmy/-+</b>NMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMmo            <b> `....----::/++ohmmNNNNMMMMMMMMN/./</b>mMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMN/          <b>`.....``````..-::/osyhddhhddddmNd..</b>+NMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMy`         <b>`.--...````````  ``-:/+++/:.``./hs`</b>oNMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMNo+:.`      <b>.---..```    `.`````.:+o:.`  `:+mN</b>NMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMMm:`  <b>```----...``````:-``.``-+mN+..``:NNMM</b>MMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMMMMMmh-..<b>`..`-::--........---....-oNMNdyyhmMMM</b>MMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMMMMho:.   <b>`-..``-:----..--::::::-...-+NMMMMMMMMMM</b>MMMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMMNo.         <b>` `.-------:://///:-....-/hMMMMMMMMMh</b>`oMMMMMMMMMMMMMMMM
+MMMMMMMMMMMMN-              <b>.-:------:::::--.`..--/sMMMh+yNMMh</b>  sMMMMMMMMMMMMMMM
+MMMMMMMMMMMMo               <b>`.-----..........`````.-+dNm+-/dN-</b>  +MMMMMMMMMMMMMMM
+MMMMMMMMMMMM.               <b>`.--...````````````````.oNMMo:.o/</b>   +MMMMMMMMMMMMMMM
+MMMMMMMMMMMM/                <b>`....`````    ````.-:/+hmmy-:/y</b>    oMMMMMMMMMMMMMMM
+MMMMMMMMMMMMs                <b>``..`````````     ```.-+shyydh.</b>    dMMMMMMMMMMMMMMM
+MMMMMMMMMMMMy                 <b>``````````..``````--:/yMMNmh.</b>     /mMMMMMMMMMMMMMM
+MMMMMMMMMMMMs                    <b>`````` ``````````.-oNNh+.</b>       .+oyhhmMMMMMMMM
+MMMMMMMMMMMM.                  <b>`    ````````....-:ohmNd/`</b>                 `-:+sh
+MMMMMMMMMMMs                                <b>`...--/ydy:</b>
+MMMMMMMMmdy-                                      <b>`.-.</b>
+MMMNy+-.
+ms:                                          <b>```</b>
+
+    </pre>
+
+          <!-- <h3>Contact</h3>
+        <ul>
+          <li><a href="http://twitter.com/aemkei">Twitter</a> - Follow @aemkei</li>
+          <li><a href="mailto:kleppe@gmail.com">Email</a> - Drop me some lines!</li>
+        </ul> -->
+
+          <hr />
+
+          <pre id="logo">
+      <b>#</b>
+      <b>#</b>
+     <b>##</b>
+      <b>#</b> #
+   ## <b>#</b> #
+ ## # <b>#</b> # #
+# # # <b>#</b> ##
+# # # <b>#</b> # #
+# # # <b>#</b> #  #
+</pre
+          >
+        </div>
+      </article>
+    </div>
+  </body>
+</html>
