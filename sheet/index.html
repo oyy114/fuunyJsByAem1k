@@ -1,0 +1,48 @@
+<table id=t><script>with(t)A=function(){for(a=h='';9>a;a++)for(h+="<tr>",c=0;d=" ABCDE"[c];)h+="<td>"+(c++?a?t[d+=a]=t[d]?eval("top[d][V='value']="+(l[d]||"''").replace(/^=/,'')):"<input id=D onfocus=D[V]=[l.D] onblur=A(l.D=D[V])>".replace(/D/g,d):d:a)},A(A(l=localStorage),innerHTML=h)</script>
+<!-- 295 bytes -->
+
+
+
+
+
+
+
+
+
+<title>A Spreadsheet in 295 bytes of JavaScript</title>
+<b>A Spreadsheet in 295 bytes of JavaScript</b>
+
+<p>
+  Main logic by <a href="http://ondras.zarovi.cz/">Ondras Zarovi</a> (<a href="http://jsfiddle.net/ondras/hYfN3/">source</a>),
+  inspired by <a href="http://thomasstreet.net/blog/spreadsheet.html">Thomas Street</a>,
+  golfed down by <a href="/">me</a>, <a href="https://twitter.com/subzey/status/403505540602417153">subzey</a>, <a href="http://www.p01.org/">p01</a> and <a href="https://github.com/rlauck">rlauck</a>. See the <a href="https://github.com/aemkei/aemkei.github.io/commits/master/sheet/index.html">commit history</a>.
+</p>
+
+Features:
+
+<ul>
+  <li>Excel-like syntax (formulas start with "=")</li>
+  <li>Support for arbitrary expressions (=A1+B2)</li>
+  <li>Automatic localStorage persistence</li>
+</ul>
+
+Source:
+
+<pre>
+&lt;table id=t>&lt;script>with(t)A=function(){for(a=h=''
+;9>a;a++)for(h+="&lt;tr>",c=0;d=" ABCDE"[c];)h+="&lt;td>
+"+(c++?a?t[d+=a]=t[d]?eval("top[d][V='value']="+(l
+[d]||"''").replace(/^=/,'')):"&lt;input id=D onfocus=
+D[V]=[l.D] onblur=A(l.D=D[V])>".replace(/D/g,d):d:
+a)},A(A(l=localStorage),innerHTML=h)&lt;/script>
+<pre>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57649-13', 'aem1k.com');
+  ga('send', 'pageview');
+</script>

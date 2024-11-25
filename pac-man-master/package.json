@@ -1,0 +1,10 @@
+{
+  "name": "pac-man",
+
+  "description": "Pac-Man in < 512 bytes of HTML and JavaScript",
+
+  "keywords": [
+    "game",
+    "pacman"
+  ]
+}
