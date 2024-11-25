@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>aurebesh.js – 将 JavaScript 变成其他书写系统</title>
+    <meta
+      name="description"
+      content="将 JavaScript 变成其他书写系统 Created by Martin Kleppe aka @aemkei."
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#222222" />
+    <meta property="og:title" content="aurebesh.js" />
+    <meta charset="utf-8" />
+    <meta property="og:description" content="将 JavaScript 变成其他书写系统" />
+    <meta property="og:image" content="./preview-large.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@aemkei" />
+    <meta property="twitter:image" content="./preview-large.png" />
+    <!-- <link
+      rel="author"
+      href="https://plus.google.com/103747379090421872359/posts"
+    />
+    <link
+      href="http://fonts.googleapis.com/css?family=Inconsolata"
+      rel="stylesheet"
+      type="text/css"
+    /> -->
+    <link href="../css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <h2 class="aurebesh">aurebesh.js</h2>
+      <h2>aurebesh.js - 将JavaScript翻译成其他书写系统。</h2>
+
+      <p>
+        在下面的输入中键入最多九个符号的列表。
+        然后，您的符号将用于生成一小段有效的JavaScript，无需任何额外代码即可执行。
+      </p>
+      <p>
+        * 由 Martin Kleppe aka 制作<a href="https://twitter.com/aemkei"
+          >@aemkei</a
+        >.
+        <br />
+        * 更多有趣的代码在 <a href="../">aem1k.com</a>.
+      </p>
+      <div id="output">
+        <article id="input">
+          <h3>字符表：</h3>
+          <input id="your-input" class="alphabet" placeholder="字符表：" />
+          <div id="your-output">↑ 编辑上面的 "字符表：" 。</div>
+        </article>
+
+        <p>
+          示例代码是 `alert(1)` - 但其他代码也可以。
+          一般来说，字符数量不会超过140个。 你可以分享你的 URL 。
+        </p>
+
+        <hr />
+
+        <h2>Examples</h2>
+
+        <p>
+          这里有一些真实和想象的书写系统的例子。
+          <a href="http://starwars.wikia.com/wiki/Aurebesh">Aurebesh</a>
+          基于《星球大战》星系中最常用的字母。
+        </p>
+      </div>
+
+      <hr />
+
+      <h2>如何工作的：</h2>
+
+      <p>这是ABC的格式化版本。仔细阅读，你会明白的。</p>
+
+      <pre>
+A = ''              // 空字符串
+B = !A + A          // "true"
+C = !B + A          // "false"
+D = A + {}          // "[object Object]"
+E = B[A++]          // "t" = "true"[0]
+F = B[G = A]        // "r" = "true"[1]
+H = ++G + A         // 2, 3
+I = D[G + H]        // "c"
+
+B[
+  I +=              // "<b>c</b>"
+    D[A] +          // "<b>o</b>" = "object"[0]
+    (B.C+D)[A] +    // "<b>n</b>" = "undefined"[1]
+    C[H] +          // "<b>s</b>" = "false"[3]
+    E +             // "<b>t</b>"
+    F +             // "<b>r</b>"
+    B[G] +          // "<b>u</b>" = "true"[2]
+    I +             // "<b>c</b>" = "[object]"[5]
+    E +             // "<b>t</b>"
+    D[A] +          // "<b>o</b>" = "[object]"[1]
+    F               // "<b>r</b>"
+][
+  I                 // "<b>constructor</b>"
+](
+  C[A] +            //  "<b>a</b>"
+  C[G] +            //  "<b>l</b>"
+  B[H] +            //  "<b>e</b>"
+  F +               //  "<b>r</b>"
+  E +               //  "<b>t</b>"
+  "(A)"             // "<b>(1)</b>"
+)()
+      </pre>
+
+      <hr />
+
+      <pre id="logo">
+      <b>#</b>
+      <b>#</b>
+     <b>##</b>
+      <b>#</b> #
+   ## <b>#</b> #
+ ## # <b>#</b> # #
+# # # <b>#</b> ##
+# # # <b>#</b> # #
+# # # <b>#</b> #  #
+</pre
+      >
+      20XX - Martin Kleppe
+    </div>
+    <script src="aurebesh.js"></script>
+
+    <script>
+	alert("李霈辰没有任何实力");
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "//www.google-analytics.com/analytics.js",
+        "ga"
+      );
+
+      ga("create", "UA-57649-13", "aem1k.com");
+      ga("send", "pageview");
+    </script>
+  </body>
+</html>

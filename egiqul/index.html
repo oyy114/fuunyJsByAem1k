@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2024 by aemkei (http://jsbin.com/egiqul/195/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+  <style>
+    body { font-family: monospace; text-align: center;}
+    #output { margin: 2em; font-size: 20px;}
+  </style>
+  
+  Binary Tetris
+  <div id="output"></div>
+  
+  <a href="https://gist.github.com/1672254">Source</a>
+  <script>
+var t =
+function(a,b,c,d,e){return d+=c,e=a|b<<d,d<0|a&b<<d&&(a=e=parseInt((a|b<<c).toString(d=32).replace(/v/,""),d),b=new Date%2?1:3),[a,b,d,e]}
+
+// Controller and Display
+
+var out = document.getElementById("output");
+
+var board = 0,
+    block = 3,
+    position = 32,
+    display;
+
+function update(offset){
+  
+  var txt = "",
+    result = t(board,block,position, offset);
+    
+  board = result[0];
+  block = result[1]
+  position = result[2]
+  display = result[3];
+
+  display = ( 1<<30 | + display ).toString(2);
+  
+  for(var i=1; i<31;i++){
+    txt += display[i] == "1" ? "#" : ".";
+    if(i%5 == 0) txt+= "<br>"; 
+  }
+  
+  out.innerHTML = txt;
+}
+
+update(0);
+
+onkeydown = function(e){
+  
+  var offset = 0;
+  
+  switch (e.keyCode){
+    case 37: offset =  1; break; 
+    case 39: offset = -1; break; 
+    case 40: offset = -5; break; 
+  }
+  
+  update(offset);
+}
+
+var speed = 1000;
+
+function loop(){
+  update(-5);
+  setTimeout(loop, speed-=5);
+}
+  
+loop();
+    
+  </script>
+  
+</html>
+
+<script src="https://static.jsbin.com/js/render/edit.js?4.1.8"></script>
+<script>jsbinShowEdit && jsbinShowEdit({"static":"https://static.jsbin.com","root":"https://jsbin.com"});</script>
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-1656750-34', 'auto');
+ga('require', 'linkid', 'linkid.js');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
